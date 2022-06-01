@@ -88,7 +88,7 @@ class GenesisDataset2D(Dataset):
 
         y = self.transform(x)
 
-        return torch.from_numpy(x.copy().astype(np.float32)), torch.from_numpy(y.copy().astype(np.float32))
+        return torch.from_numpy(y.copy().astype(np.float32)), torch.from_numpy(x.copy().astype(np.float32))
 
 
 class PPos2DDataset(Dataset):
